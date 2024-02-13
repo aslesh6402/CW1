@@ -7,3 +7,8 @@ from geopy.geocoders import Nominatim
 from datetime import datetime
 import pytz
 
+root=Tk()
+root.title("Phone Number Tracker")
+root.iconbitmap('Images/logo_PI6_icon.ico')
+root.geometry("365x584+200+100")
+root.resizable(False,False)
