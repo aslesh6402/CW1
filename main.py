@@ -28,3 +28,8 @@ def track():
 	# logitude and latitude 
 	geolocator=Nominatim(user_agent="geoapiExercises")
 	location=geolocator.geocode(locate)
+
+	lng=location.longitude
+	lat=location.latitude
+	longitude.config(text=lng)
+	latitude.config(text=lat)
