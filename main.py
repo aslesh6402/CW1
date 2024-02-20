@@ -42,3 +42,7 @@ def track():
 	local_time=datetime.now(home)
 	current_time=local_time.strftime("%I:%M:%p")
 	clock.config(text=current_time)
+
+# logo
+logo=PhotoImage(file="Images/logoimage.png")
+Label(root,image=logo).place(x=240,y=70)
