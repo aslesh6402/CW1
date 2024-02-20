@@ -46,3 +46,10 @@ def track():
 # logo
 logo=PhotoImage(file="Images/logoimage.png")
 Label(root,image=logo).place(x=240,y=70)
+
+Heading=Label(root,text="TRACK NUMBERS",font=("arial",15,"bold"))
+Heading.place(x=84,y=110)
+
+# Entry
+Entry_back=PhotoImage(file="Images/search png.png")
+Label(root,image=Entry_back).place(x=20,y=190)
