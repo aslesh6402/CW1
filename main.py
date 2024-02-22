@@ -44,14 +44,14 @@ def track():
 	clock.config(text=current_time)
 
 # logo
-logo=PhotoImage(file="Images/logoimage.png")
+logo=PhotoImage(file="img/logoimage.png")
 Label(root,image=logo).place(x=240,y=70)
 
 Heading=Label(root,text="TRACK NUMBERS",font=("arial",15,"bold"))
 Heading.place(x=84,y=110)
 
 # Entry
-Entry_back=PhotoImage(file="Images/search png.png")
+Entry_back=PhotoImage(file="img/search png.png")
 Label(root,image=Entry_back).place(x=20,y=190)
 
 entry=StringVar()
@@ -59,7 +59,7 @@ entry_number=Entry(root,textvariable=entry,width=19,font=("arial",18,"bold"),bd=
 entry_number.place(x=57,y=222)
 
 # Button
-Search_image=PhotoImage(file="Images/search.png")
+Search_image=PhotoImage(file="img/search.png")
 Search=Button(root,image=Search_image,borderwidth=0,cursor="hand2",font=("arial",16),command=track)
 Search.place(x=35,y=300)
 
