@@ -53,3 +53,36 @@ Heading.place(x=84,y=110)
 # Entry
 Entry_back=PhotoImage(file="Images/search png.png")
 Label(root,image=Entry_back).place(x=20,y=190)
+
+entry=StringVar()
+entry_number=Entry(root,textvariable=entry,width=19,font=("arial",18,"bold"),bd=0,justify="center")
+entry_number.place(x=57,y=222)
+
+# Button
+Search_image=PhotoImage(file="Images/search.png")
+Search=Button(root,image=Search_image,borderwidth=0,cursor="hand2",font=("arial",16),command=track)
+Search.place(x=35,y=300)
+
+# Button Box
+Box=PhotoImage(file="Images/bottom png.png")
+Label(root,image=Box).place(x=-2,y=355)
+
+country=Label(root,text="Country:",bg="#57adff",fg="black",font=("arial",10,"bold"))
+country.place(x=50,y=400)
+
+sim=Label(root,text="SIM:",bg="#57adff",fg="black",font=("arial",10,"bold"))
+sim.place(x=200,y=400)
+
+zone=Label(root,text="TimeZone:",bg="#57adff",fg="black",font=("arial",10,"bold"))
+zone.place(x=50,y=450)
+
+clock=Label(root,text="Phone Time:",bg="#57adff",fg="black",font=("arial",10,"bold"))
+clock.place(x=200,y=450)
+
+longitude=Label(root,text="Longitude:",bg="#57adff",fg="black",font=("arial",10,"bold"))
+longitude.place(x=50,y=500)
+
+latitude=Label(root,text="Latitude:",bg="#57adff",fg="black",font=("arial",10,"bold"))
+latitude.place(x=200,y=500)
+
+root.mainloop()
